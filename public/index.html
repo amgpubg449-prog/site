@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>AuroraX – Advanced Landing</title>
+  <meta name="description" content="An advanced, animated landing page with gradients, glassmorphism, and interactive motion." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg"></div>
+  <div class="orbs" aria-hidden="true">
+    <div class="orb o1"></div>
+    <div class="orb o2"></div>
+    <div class="orb o3"></div>
+  </div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="brand"><span class="dot"></span> AURORAX</div>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#showcase">Showcase</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-ghost" href="#">Sign in</a>
+        <a class="btn btn-primary" href="#">Get Started</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero parallax-wrap">
+      <div class="eyebrow parallax-item" data-depth="6"><span class="spark" aria-hidden="true"></span> Experience the Aurora Engine</div>
+
+      <h1 class="title parallax-item" data-depth="10">
+        Build the <span class="grad">future</span> with immersive design, motion, and clarity.
+      </h1>
+
+      <p class="subtitle parallax-item" data-depth="12">
+        A refined landing page boilerplate featuring animated gradients, glassmorphism, dynamic blur orbs,
+        parallax interactions, and scroll-triggered reveals. Crafted for performance and beauty.
+      </p>
+
+      <div class="hero-cta parallax-item" data-depth="14">
+        <a class="btn btn-primary" href="#features">Explore Features</a>
+        <a class="btn btn-ghost" href="#contact">Talk to Us</a>
+      </div>
+    </section>
+
+    <section class="stats reveal">
+      <div class="stat">
+        <b>+120%</b>
+        <span>Avg. engagement increase</span>
+      </div>
+      <div class="stat">
+        <b>200ms</b>
+        <span>Interactive in under</span>
+      </div>
+      <div class="stat">
+        <b>99.99%</b>
+        <span>Reliability on modern browsers</span>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <h2 class="reveal">Make an unforgettable first impression</h2>
+      <p class="lead reveal">A flexible interface kit that blends motion, blur, and color into a cohesive aesthetic. Modify the variables up top to retheme instantly.</p>
+
+      <div class="grid">
+        <article class="card reveal">
+          <div class="icon" aria-hidden="true">⚡</div>
+          <h3>Animated Gradients</h3>
+          <p>Layered conic and radial gradients create a living backdrop that breathes without stealing focus.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="icon" aria-hidden="true">🧊</div>
+          <h3>Glassmorphism</h3>
+          <p>Subtle translucency and blur for elevated cards that feel crisp and modern on any display.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="icon" aria-hidden="true">🫧</div>
+          <h3>Depth & Blur Orbs</h3>
+          <p>Floating, blurred spheres provide motion parallax and depth without heavy JS or canvas.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="icon" aria-hidden="true">🎯</div>
+          <h3>Micro-interactions</h3>
+          <p>Hover lifts, glowing shadows, and soft transitions make the UI feel responsive and alive.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="icon" aria-hidden="true">🧭</div>
+          <h3>Parallax Layers</h3>
+          <p>Tasteful 3D motion reacts to the pointer to add presence without harming readability.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="icon" aria-hidden="true">🛡️</div>
+          <h3>Accessible & Performant</h3>
+          <p>Reduced JS, semantic HTML, and progressive enhancement for strong baselines.</p>
+        </article>
+
+        <div id="showcase" class="showcase reveal">
+          <div class="visual" aria-hidden="true">
+            <div class="mesh"></div>
+          </div>
+          <div class="content">
+            <h3>Showcase: Aurora Mesh</h3>
+            <p>A rotating, blurred conic gradient mesh gives a premium, dimensional feel with GPU-friendly effects.</p>
+            <a class="btn btn-primary" href="#pricing">See Pricing</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section">
+      <h2 class="reveal">Simple pricing that scales with you</h2>
+      <p class="lead reveal">Transparent and fair. Get started free, then upgrade as your traffic grows.</p>
+
+      <div class="grid">
+        <article class="card reveal" style="grid-column: span 4">
+          <div class="icon" aria-hidden="true">🌱</div>
+          <h3>Starter</h3>
+          <p>Free forever • Ideal for prototypes and personal sites.</p>
+        </article>
+        <article class="card reveal" style="grid-column: span 4">
+          <div class="icon" aria-hidden="true">🚀</div>
+          <h3>Pro</h3>
+          <p>$19/mo • For growing projects that need polish and reliability.</p>
+        </article>
+        <article class="card reveal" style="grid-column: span 4">
+          <div class="icon" aria-hidden="true">🏢</div>
+          <h3>Enterprise</h3>
+          <p>Custom • Dedicated support, SSO, compliance, and SLAs.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2 class="reveal">Bring your vision to life</h2>
+      <p class="lead reveal">Have questions or a unique concept? We collaborate with teams to turn concepts into stunning, performant experiences.</p>
+      <div class="reveal">
+        <a class="btn btn-primary" href="#">Contact sales</a>
+        <a class="btn btn-ghost" href="#">Documentation</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>© <span id="y"></span> AuroraX. Designed for the modern web.</div>
+    <div class="links">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Status</a>
+      <a href="#">Changelog</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
