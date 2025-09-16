@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Contact – AuroraX</title>
+  <meta name="description" content="Get in touch with our team. We're here to help you build amazing experiences." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg"></div>
+  <div class="orbs" aria-hidden="true">
+    <div class="orb o1"></div>
+    <div class="orb o2"></div>
+    <div class="orb o3"></div>
+  </div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="brand"><span class="dot"></span> <a href="index.html" style="color: inherit; text-decoration: none;">AURORAX</a></div>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-ghost" href="signin.html">Sign in</a>
+        <a class="btn btn-primary" href="signup.html">Get Started</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero parallax-wrap">
+      <div class="eyebrow parallax-item" data-depth="6"><span class="spark" aria-hidden="true"></span> Get In Touch</div>
+
+      <h1 class="title parallax-item" data-depth="10">
+        Let's build something <span class="grad">extraordinary</span> together.
+      </h1>
+
+      <p class="subtitle parallax-item" data-depth="12">
+        Whether you have questions, need support, or want to discuss a custom solution, our team is here to help.
+      </p>
+    </section>
+
+    <section class="section">
+      <div class="grid">
+        <div class="contact-form-container reveal" style="grid-column: span 8;">
+          <div class="contact-form card">
+            <h3>Send us a message</h3>
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="company">Company</label>
+                  <input type="text" id="company" name="company">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject" required>
+                  <option value="">Select a topic</option>
+                  <option value="general">General Inquiry</option>
+                  <option value="support">Technical Support</option>
+                  <option value="sales">Sales & Pricing</option>
+                  <option value="partnership">Partnership</option>
+                  <option value="feedback">Feedback</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell us about your project or question..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">
+                Send Message
+                <span class="loading" style="display: none;">Sending...</span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="contact-info reveal" style="grid-column: span 4;">
+          <div class="info-card card">
+            <h3>Other ways to reach us</h3>
+            
+            <div class="contact-method">
+              <div class="method-icon">📧</div>
+              <div class="method-content">
+                <h4>Email Support</h4>
+                <p>support@aurorax.dev</p>
+                <small>We typically respond within 2 hours</small>
+              </div>
+            </div>
+
+            <div class="contact-method">
+              <div class="method-icon">💬</div>
+              <div class="method-content">
+                <h4>Live Chat</h4>
+                <p>Available 9 AM - 6 PM PST</p>
+                <small>Click the chat bubble in the bottom right</small>
+              </div>
+            </div>
+
+            <div class="contact-method">
+              <div class="method-icon">📱</div>
+              <div class="method-content">
+                <h4>Enterprise Sales</h4>
+                <p>+1 (555) 123-4567</p>
+                <small>For custom solutions and partnerships</small>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <h4>Follow us</h4>
+              <div class="social-buttons">
+                <a href="#" class="social-btn">Twitter</a>
+                <a href="#" class="social-btn">LinkedIn</a>
+                <a href="#" class="social-btn">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="grid">
+        <article class="card reveal" style="grid-column: span 4;">
+          <div class="icon" aria-hidden="true">🚀</div>
+          <h3>Quick Start</h3>
+          <p>Need help getting started? Check out our comprehensive documentation and tutorials.</p>
+          <a class="btn btn-ghost" href="docs.html">View Docs</a>
+        </article>
+
+        <article class="card reveal" style="grid-column: span 4;">
+          <div class="icon" aria-hidden="true">💡</div>
+          <h3>Feature Requests</h3>
+          <p>Have an idea for a new feature? We'd love to hear about it and consider it for our roadmap.</p>
+          <a class="btn btn-ghost" href="#" onclick="document.getElementById('subject').value='feedback'; document.getElementById('message').focus();">Submit Idea</a>
+        </article>
+
+        <article class="card reveal" style="grid-column: span 4;">
+          <div class="icon" aria-hidden="true">🔒</div>
+          <h3>Security Issues</h3>
+          <p>Found a security vulnerability? Please report it responsibly through our security program.</p>
+          <a class="btn btn-ghost" href="security.html">Report Vulnerability</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="grid">
+      <div class="footer-brand">
+        <div class="brand"><span class="dot"></span> AURORAX</div>
+        <p>Building the future of digital experiences</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Twitter">Twitter</a>
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          <a href="#" aria-label="GitHub">GitHub</a>
+        </div>
+      </div>
+      
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="integrations.html">Integrations</a></li>
+            <li><a href="roadmap.html">Roadmap</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="docs.html">Documentation</a></li>
+            <li><a href="tutorials.html">Tutorials</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="community.html">Community</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="legal.html">Legal</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2023 AuroraX. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="cookies.html">Cookie Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Simple form submission handling
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const submitBtn = this.querySelector('button[type="submit"]');
+      const loading = this.querySelector('.loading');
+      
+      // Show loading state
+      submitBtn.disabled = true;
+      loading.style.display = 'inline';
+      
+      // Simulate form submission
+      setTimeout(() => {
+        alert('Thank you for your message! We\'ll get back to you soon.');
+        this.reset();
+        submitBtn.disabled = false;
+        loading.style.display = 'none';
+      }, 1500);
+    });
+
+    // Simple reveal animation on scroll
+    document.addEventListener('DOMContentLoaded', function() {
+      const revealElements = document.querySelectorAll('.reveal');
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+          }
+        });
+      }, { threshold: 0.1 });
+      
+      revealElements.forEach(el => observer.observe(el));
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Pricing – AuroraX</title>
+  <meta name="description" content="Simple, transparent pricing that scales with your needs. Start free and upgrade as you grow." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg"></div>
+  <div class="orbs" aria-hidden="true">
+    <div class="orb o1"></div>
+    <div class="orb o2"></div>
+    <div class="orb o3"></div>
+  </div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="brand"><span class="dot"></span> <a href="index.html" style="color: inherit; text-decoration: none;">AURORAX</a></div>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="pricing.html" class="active">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-ghost" href="signin.html">Sign in</a>
+        <a class="btn btn-primary" href="signup.html">Get Started</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero parallax-wrap">
+      <div class="eyebrow parallax-item" data-depth="6"><span class="spark" aria-hidden="true"></span> Simple Pricing</div>
+
+      <h1 class="title parallax-item" data-depth="10">
+        Choose the plan that <span class="grad">scales</span> with you.
+      </h1>
+
+      <p class="subtitle parallax-item" data-depth="12">
+        Transparent pricing with no hidden fees. Start free and upgrade when you're ready to grow.
+      </p>
+    </section>
+
+    <section class="section">
+      <div class="pricing-toggle reveal">
+        <div class="toggle-wrapper">
+          <span>Monthly</span>
+          <button class="toggle" id="billing-toggle">
+            <span class="toggle-slider"></span>
+          </button>
+          <span>Annual <span class="discount">Save 20%</span></span>
+        </div>
+      </div>
+
+      <div class="grid pricing-grid">
+        <article class="pricing-card reveal">
+          <div class="pricing-header">
+            <div class="icon" aria-hidden="true">🌱</div>
+            <h3>Starter</h3>
+            <div class="price">
+              <span class="amount monthly">$0</span>
+              <span class="amount annual" style="display: none;">$0</span>
+              <span class="period">/month</span>
+            </div>
+            <p>Perfect for personal projects and prototypes</p>
+          </div>
+          <div class="pricing-features">
+            <div class="feature">✓ Up to 3 projects</div>
+            <div class="feature">✓ Basic components</div>
+            <div class="feature">✓ Community support</div>
+            <div class="feature">✓ Basic animations</div>
+            <div class="feature">✓ Mobile responsive</div>
+          </div>
+          <a class="btn btn-ghost btn-full" href="signup.html">Get Started Free</a>
+        </article>
+
+        <article class="pricing-card featured reveal">
+          <div class="popular-badge">Most Popular</div>
+          <div class="pricing-header">
+            <div class="icon" aria-hidden="true">🚀</div>
+            <h3>Pro</h3>
+            <div class="price">
+              <span class="amount monthly">$19</span>
+              <span class="amount annual" style="display: none;">$15</span>
+              <span class="period">/month</span>
+            </div>
+            <p>For growing businesses and professional projects</p>
+          </div>
+          <div class="pricing-features">
+            <div class="feature">✓ Unlimited projects</div>
+            <div class="feature">✓ Advanced components</div>
+            <div class="feature">✓ Priority support</div>
+            <div class="feature">✓ Advanced animations</div>
+            <div class="feature">✓ Custom themes</div>
+            <div class="feature">✓ Analytics dashboard</div>
+            <div class="feature">✓ Export to code</div>
+          </div>
+          <a class="btn btn-primary btn-full" href="signup.html">Start Pro Trial</a>
+        </article>
+
+        <article class="pricing-card reveal">
+          <div class="pricing-header">
+            <div class="icon" aria-hidden="true">🏢</div>
+            <h3>Enterprise</h3>
+            <div class="price">
+              <span class="amount">Custom</span>
+            </div>
+            <p>For large teams and enterprise requirements</p>
+          </div>
+          <div class="pricing-features">
+            <div class="feature">✓ Everything in Pro</div>
+            <div class="feature">✓ White-label solution</div>
+            <div class="feature">✓ Dedicated support</div>
+            <div class="feature">✓ SSO & SAML</div>
+            <div class="feature">✓ Custom integrations</div>
+            <div class="feature">✓ SLA guarantee</div>
+            <div class="feature">✓ Training & onboarding</div>
+          </div>
+          <a class="btn btn-ghost btn-full" href="contact.html">Contact Sales</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="reveal">Frequently Asked Questions</h2>
+      <div class="faq-grid reveal">
+        <div class="faq-item">
+          <h3>Can I change plans at any time?</h3>
+          <p>Yes! You can upgrade or downgrade your plan at any time. Changes take effect immediately, and we'll prorate your billing accordingly.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Is there a free trial for Pro?</h3>
+          <p>Absolutely! We offer a 14-day free trial for the Pro plan with full access to all features. No credit card required.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What payment methods do you accept?</h3>
+          <p>We accept all major credit cards (Visa, MasterCard, American Express) and PayPal. Enterprise customers can also pay by invoice.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do you offer refunds?</h3>
+          <p>Yes, we offer a 30-day money-back guarantee. If you're not satisfied, contact us for a full refund within 30 days of purchase.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I use AuroraX for client projects?</h3>
+          <p>Yes! Both Pro and Enterprise plans include commercial usage rights. You can use AuroraX for unlimited client projects.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What kind of support do you provide?</h3>
+          <p>Starter users get community support, Pro users get email support with 24h response time, and Enterprise gets dedicated support with SLA.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="cta-section reveal">
+        <h2>Ready to build something amazing?</h2>
+        <p>Join thousands of developers and designers who trust AuroraX for their projects.</p>
+        <div style="margin-top: 24px;">
+          <a class="btn btn-primary" href="signup.html">Start Free Trial</a>
+          <a class="btn btn-ghost" href="contact.html">Talk to Sales</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>© <span id="y"></span> AuroraX. Designed for the modern web.</div>
+    <div class="links">
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="status.html">Status</a>
+      <a href="changelog.html">Changelog</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="pricing.js"></script>
+</body>
+</html>
